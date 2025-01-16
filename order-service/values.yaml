@@ -90,10 +90,14 @@ livenessProbe:
   httpGet:
     path: /oms/actuator/health/liveness
     port: 9091
+  initialDelaySeconds: 3
+  periodSeconds: 3
 readinessProbe:
   httpGet:
     path: /oms/actuator/health/readiness
     port: 9091
+  initialDelaySeconds: 3
+  periodSeconds: 3
 
 # This section is for setting up autoscaling more information can be found here: https://kubernetes.io/docs/concepts/workloads/autoscaling/
 autoscaling:
