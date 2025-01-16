@@ -89,11 +89,11 @@ resources: {}
 livenessProbe:
   httpGet:
     path: /oms/actuator/health/liveness
-    port: 9093
+    port: 9091
 readinessProbe:
   httpGet:
     path: /oms/actuator/health/readiness
-    port: 9093
+    port: 9091
 
 # This section is for setting up autoscaling more information can be found here: https://kubernetes.io/docs/concepts/workloads/autoscaling/
 autoscaling:
