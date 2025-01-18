@@ -100,10 +100,10 @@ autoscaling:
   # targetMemoryUtilizationPercentage: 80
 
 # Additional volumes on the output Deployment definition.
-volumes: []
+volumes:
  - name: config-management-service
-    configMap:
-      name: order-management-service-configmap
+   configMap:
+     name: order-management-service-configmap
 #   secret:
 #     secretName: mysecret
 #     optional: false
