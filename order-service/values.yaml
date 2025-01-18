@@ -8,7 +8,7 @@ image:
   tag: "7"
 
 config:
-  server_port: 9091
+  server_port: "9091"
 
 imagePullSecrets: []
 # This is to override the chart name.
@@ -109,9 +109,9 @@ volumes:
 #     optional: false
 
 # Additional volumeMounts on the output Deployment definition.
-volumeMounts: []
-# - name: foo
-#   mountPath: "/etc/foo"
+volumeMounts:
+  - name: config-management-service-val
+    mountPath: "/config"
 #   readOnly: true
 
 nodeSelector: {}
