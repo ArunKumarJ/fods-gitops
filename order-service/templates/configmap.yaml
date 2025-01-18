@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: {{ .Values.name }}-configmap
 data:
-  SERVER_PORT: {{ .Values.config.server_port }}
+  SERVER_PORT: "{{ .Values.config.server_port }}"
