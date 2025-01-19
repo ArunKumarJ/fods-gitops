@@ -41,7 +41,7 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           envFrom:
             - configMapRef:
-              name: order-management-service-configmap
+                name: order-management-service-configmap
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - name: http
