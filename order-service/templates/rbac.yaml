@@ -5,7 +5,7 @@ metadata:
   namespace: aklearn
 rules:
 - apiGroups: [""]
-  resources: ["pods", "pods/exec", "pods/log"]
+  resources: ["pods", "pods/exec", "pods/log","configmaps"]
   verbs: ["*"]
 ---
 # Source: hello/templates/rbac
