@@ -4,3 +4,4 @@ metadata:
   name: {{ .Values.name }}-configmap
 data:
   SERVER_PORT: "{{ .Values.config.server_port }}"
+  app.name: "MySpringApp"
